@@ -1,0 +1,36 @@
+//----------------------------------------------- Variable----------------------------------------//
+$color1: #00f2ff;
+
+// ----------------------------------------------- Mixin------------------------------------------//
+
+@mixin colorHome {
+    background: -webkit-linear-gradient(
+        45deg,
+        rgb(0, 21, 252) 0%,
+        rgb(251, 0, 255) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@mixin centerElement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//----------------------------------------------- Settings ---------------------------------------//
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Vibur', cursive;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+    &:hover {
+        scale: 1.3;
+        transition: 0.2s ease-in-out;
+    }
+}
