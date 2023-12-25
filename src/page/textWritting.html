@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../style.min.css" />
+    </head>
+    <body>
+        <h3 class="fixed">Click the letters!</h3>
+        <div class="word">
+            <span>M</span>
+            <span>A</span>
+            <span>N</span>
+            <span>G</span>
+            <span>U</span>
+        </div>
+        <div>
+            <!-- <a href="./page/textWritting.html">Coucou</a> -->
+        </div>
+        <script src="../index.js">
+                        const spans = document.querySelectorAll('.word span')
+
+            spans.forEach((span, idx) => {
+                span.addEventListener('click', (e) => {
+                    e.target.classList.add('active')
+                })
+                span.addEventListener('animationend', (e) => {
+                    e.target.classList.remove('active')
+                })
+
+                // Initial animation
+                setTimeout(() => {
+                    span.classList.add('active')
+                }, 750 * (idx + 1))
+            })
+        </script>
+    </body>
+</html>

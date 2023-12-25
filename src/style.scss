@@ -1,0 +1,1646 @@
+// @import './page/_textWritting';
+
+//----------------------------------------------- Variable----------------------------------------//
+$color1: #00f2ff;
+
+// ----------------------------------------------- Mixin------------------------------------------//
+
+@mixin colorHome {
+    background: -webkit-linear-gradient(
+        45deg,
+        rgb(0, 21, 252) 0%,
+        rgb(251, 0, 255) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@mixin centerElement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//----------------------------------------------- Settings ---------------------------------------//
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Vibur', cursive;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+    &:hover {
+        scale: 1.3;
+        transition: 0.2s ease-in-out;
+    }
+}
+
+//----------------------------------------------- Body-------------------------------------------//
+body {
+    background-color: #111111;
+
+    // -------------------- animation intro----------------
+    .intro {
+        background-color: #111111;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: introEnd 0.1s ease-in 4s;
+        overflow: hidden;
+
+        .intro-content {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            svg {
+                width: 80%;
+                height: 100vh;
+                overflow: visible;
+                .intro-text {
+                    width: 50%;
+                    fill: none;
+                    stroke: #c1faf2;
+                    stroke-linecap: round;
+                    stroke-width: 2px;
+                    stroke-dasharray: 100;
+                    stroke-dashoffset: 100;
+                    animation: draw 2s linear 0.7s forwards;
+                }
+                .intro-blur {
+                    fill: none;
+                    stroke: #00ffdd;
+                    stroke-linecap: round;
+                    stroke-dasharray: 100;
+                    stroke-dashoffset: 100;
+                    stroke-width: 10px;
+                    filter: blur(10px);
+                    z-index: 5;
+                    animation: neon 2s linear 2s infinite;
+                }
+            }
+
+            @keyframes draw {
+                to {
+                    stroke-dashoffset: 0;
+                }
+            }
+            @keyframes neon {
+                0% {
+                    stroke-width: 0px;
+                    filter: blur(50px);
+                    stroke-dashoffset: 0;
+                }
+                1% {
+                    stroke-width: 4px;
+                    filter: blur(50px);
+                    stroke-dashoffset: 0;
+                }
+                38% {
+                    stroke-width: 4px;
+                    filter: blur(50px);
+                    stroke-dashoffset: 0;
+                }
+                40% {
+                    stroke-width: 3px;
+                    filter: blur(50px);
+                    stroke-dashoffset: 0;
+                }
+                49% {
+                    stroke-width: 3px;
+                    filter: blur(50px);
+                    stroke-dashoffset: 0;
+                }
+                50% {
+                    stroke-width: 4px;
+                    filter: blur(50px);
+                    stroke-dashoffset: 0;
+                }
+                89% {
+                    stroke-width: 4px;
+                    filter: blur(50px);
+                    stroke-dashoffset: 0;
+                }
+                92% {
+                    stroke-width: 0px;
+                    filter: blur(50px);
+                    stroke-dashoffset: 0;
+                }
+                93% {
+                    stroke-width: 0px;
+                    filter: blur(50px);
+                    stroke-dashoffset: 0;
+                }
+                95% {
+                    stroke-width: 4px;
+                    filter: blur(50px);
+                    stroke-dashoffset: 0;
+                }
+                100% {
+                    stroke-width: 4px;
+                    filter: blur(50px);
+                    stroke-dashoffset: 0;
+                }
+            }
+            @keyframes introEnd {
+                to {
+                    scale: 10;
+                    overflow: hidden;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    // ------------------------- Main----------------------/
+    // ------------------------- Main----------------------/
+    // ------------------------- Main----------------------/
+    @keyframes animationMain {
+        0% {
+            background: #c1faf2;
+        }
+        100% {
+            background-color: #111;
+        }
+    }
+    @keyframes neonH {
+        to {
+            text-shadow: 0 0 4px #c7ccff, 0 0 11px #c7ccff, 0 0 19px #0015ee,
+                0 0 40px #0015ee, 0 0 80px #0015ee;
+        }
+    }
+    @keyframes neonP {
+        to {
+            text-shadow: 0 0 4px #e1c9ff, 0 0 11px #e1c9ff, 0 0 19px #7100ff,
+                0 0 40px #7100ff;
+        }
+    }
+    // ----------------header--------------- //
+    @keyframes headerTitleAnim {
+        0% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 0 150px #001fff, 0 10px 3px #000;
+        }
+        14% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 0 150px #001fff, 0 10px 3px #000;
+        }
+        15% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 10px 3px #000;
+        }
+        16% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 0 150px #001fff, 0 10px 3px #000;
+        }
+        47% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 0 150px #001fff, 0 10px 3px #000;
+        }
+        48% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 10px 3px #000;
+        }
+        49% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 0 150px #001fff, 0 10px 3px #000;
+        }
+        60% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 0 150px #001fff, 0 10px 3px #000;
+        }
+        100% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 0 150px #001fff, 0 10px 3px #000;
+        }
+    }
+    @keyframes headerBecomeAnim {
+        0% {
+            color: #d9bcff;
+            text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 10px 3px #000;
+        }
+        14% {
+            color: #d9bcff;
+            text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 10px 3px #000;
+        }
+        15% {
+            color: #d9bcff;
+            text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff;
+        }
+        16% {
+            color: #d9bcff;
+            text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 10px 3px #000;
+        }
+        47% {
+            color: #d9bcff;
+            text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 10px 3px #000;
+        }
+        48% {
+            color: #d9bcff;
+            text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff;
+        }
+        49% {
+            color: #d9bcff;
+            text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 10px 3px #000;
+        }
+
+        60% {
+            color: #d9bcff;
+            text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 10px 3px #000;
+        }
+        61% {
+            color: #141414;
+            text-shadow: 0 0 90px #121212, 0 10px 3px #000;
+        }
+        100% {
+            color: #141414;
+            text-shadow: 0 0 90px #121212, 0 10px 3px #000;
+        }
+    }
+    @keyframes headerArrowAnim {
+        0% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        14% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        15% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 10px 3px #000;
+        }
+        16% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        47% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        48% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 10px 3px #000;
+        }
+        49% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        60% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        61% {
+            color: #141414;
+            text-shadow: 0 0 4px #121212, 0 0 11px #121212, 0 0 19px #121212,
+                0 0 40px #121212, 0 10px 3px #000;
+        }
+        100% {
+            color: #141414;
+            text-shadow: 0 0 4px #121212, 0 0 11px #121212, 0 0 19px #121212,
+                0 0 40px #121212, 0 10px 3px #000;
+        }
+    }
+    //------------------Nav---------------- //
+    @keyframes navLinkAnim {
+        0% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 0 150px #001fff, 0 10px 3px #000;
+        }
+        14% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 0 150px #001fff, 0 10px 3px #000;
+        }
+        15% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 10px 3px #000;
+        }
+        16% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 0 150px #001fff, 0 10px 3px #000;
+        }
+        47% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 0 150px #001fff, 0 10px 3px #000;
+        }
+        48% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 10px 3px #000;
+        }
+        49% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 0 150px #001fff, 0 10px 3px #000;
+        }
+        60% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 0 150px #001fff, 0 10px 3px #000;
+        }
+        100% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 0 150px #001fff, 0 10px 3px #000;
+        }
+    }
+    @keyframes navIconAnim {
+        0% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        14% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        15% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 10px 3px #000;
+        }
+        16% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        47% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        48% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 10px 3px #000;
+        }
+        49% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        60% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        80% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        81% {
+            color: #141414;
+            text-shadow: 0 0 4px #121212, 0 0 11px #121212, 0 0 19px #121212,
+                0 0 40px #121212, 0 10px 3px #000;
+        }
+        100% {
+            color: #141414;
+            text-shadow: 0 0 4px #121212, 0 0 11px #121212, 0 0 19px #121212,
+                0 0 40px #121212, 0 10px 3px #000;
+        }
+    }
+    @keyframes navAfterAnim {
+        0% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 10px 3px #000;
+        }
+        14% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 10px 3px #000;
+        }
+        15% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff;
+        }
+        16% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 10px 3px #000;
+        }
+        47% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 10px 3px #000;
+        }
+        48% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff;
+        }
+        49% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 10px 3px #000;
+        }
+
+        60% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 10px 3px #000;
+        }
+        77% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 10px 3px #000;
+        }
+        78% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff;
+        }
+        79% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 10px 3px #000;
+        }
+        100% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 10px 3px #000;
+        }
+    }
+    //------------------Section-----------//
+    @keyframes sectionTitleAnim {
+        0% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 10px 3px #000;
+        }
+        14% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 10px 3px #000;
+        }
+        15% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 10px 3px #000;
+        }
+        16% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 10px 3px #000;
+        }
+        47% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 10px 3px #000;
+        }
+        48% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 10px 3px #000;
+        }
+        49% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 10px 3px #000;
+        }
+        60% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 10px 3px #000;
+        }
+        100% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 10px 3px #000;
+        }
+    }
+    @keyframes sectionBeforeAnim {
+        0% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, -10px 0px 3px #000;
+        }
+        14% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, -10px 0px 3px #000;
+        }
+        15% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff;
+        }
+        16% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, -10px 0px 3px #000;
+        }
+        47% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, -10px 0px 3px #000;
+        }
+        48% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff;
+        }
+        49% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, -10px 0px 3px #000;
+        }
+
+        60% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, -10px 0px 3px #000;
+        }
+        77% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, -10px 0px 3px #000;
+        }
+        78% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff;
+        }
+        79% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, -10px 0px 3px #000;
+        }
+        100% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, -10px 0px 3px #000;
+        }
+    }
+    @keyframes sectionBeforeResponsiveAnim {
+        0% {
+            backrground: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 3px 10px #000;
+        }
+        14% {
+            backrground: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 3px 10px #000;
+        }
+        15% {
+            backrground: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff;
+        }
+        16% {
+            backrground: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 3px 10px #000;
+        }
+        47% {
+            backrground: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 3px 10px #000;
+        }
+        48% {
+            backrground: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff;
+        }
+        49% {
+            backrground: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 3px 10px #000;
+        }
+
+        60% {
+            backrground: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 3px 10px #000;
+        }
+        77% {
+            backrground: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 3px 10px #000;
+        }
+        78% {
+            backrground: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff;
+        }
+        79% {
+            backrground: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 3px 10px #000;
+        }
+        100% {
+            backrground: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 3px 10px #000;
+        }
+    }
+    @keyframes sectionTextAnim {
+        0% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        14% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        15% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 10px 3px #000;
+        }
+        16% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        47% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        48% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 10px 3px #000;
+        }
+        49% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        60% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        80% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        87% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        88% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 10px 3px #000;
+        }
+        89% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        90% {
+            color: #141414;
+            text-shadow: 0 0 4px #121212, 0 0 11px #121212, 0 0 19px #121212,
+                0 0 40px #121212, 0 10px 3px #000;
+        }
+        100% {
+            color: #141414;
+            text-shadow: 0 0 4px #121212, 0 0 11px #121212, 0 0 19px #121212,
+                0 0 40px #121212, 0 10px 3px #000;
+        }
+    }
+    @keyframes sectionTextAfterAnim {
+        0% {
+            background: #ffc0fc;
+            box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        14% {
+            background: #ffc0fc;
+            box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        15% {
+            background: #ffc0fc;
+            box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 10px 3px #000;
+        }
+        16% {
+            background: #ffc0fc;
+            box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        47% {
+            background: #ffc0fc;
+            box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        48% {
+            background: #ffc0fc;
+            box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 10px 3px #000;
+        }
+        49% {
+            background: #ffc0fc;
+            box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        60% {
+            background: #ffc0fc;
+            box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        80% {
+            background: #ffc0fc;
+            box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        87% {
+            background: #ffc0fc;
+            box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        88% {
+            background: #ffc0fc;
+            box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 10px 3px #000;
+        }
+        89% {
+            background: #ffc0fc;
+            box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        90% {
+            background: #141414;
+            box-shadow: 0 0 4px #121212, 0 0 11px #121212, 0 0 19px #121212,
+                0 0 40px #121212, 0 10px 3px #000;
+        }
+        100% {
+            background: #141414;
+            box-shadow: 0 0 4px #121212, 0 0 11px #121212, 0 0 19px #121212,
+                0 0 40px #121212, 0 10px 3px #000;
+        }
+    }
+
+    //---------------Article--------------//
+    @keyframes cvTitleAnim {
+        0% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 10px 3px #000;
+        }
+        14% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 10px 3px #000;
+        }
+        15% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 10px 3px #000;
+        }
+        16% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 10px 3px #000;
+        }
+        47% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 10px 3px #000;
+        }
+        48% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 10px 3px #000;
+        }
+        49% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 10px 3px #000;
+        }
+        60% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 10px 3px #000;
+        }
+        100% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 10px 3px #000;
+        }
+    }
+    @keyframes cvIconAnim {
+        0% {
+            color: #d9bcff;
+            text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 10px 3px #000;
+        }
+        14% {
+            color: #d9bcff;
+            text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 10px 3px #000;
+        }
+        15% {
+            color: #d9bcff;
+            text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff;
+        }
+        16% {
+            color: #d9bcff;
+            text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 10px 3px #000;
+        }
+        47% {
+            color: #d9bcff;
+            text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 10px 3px #000;
+        }
+        48% {
+            color: #d9bcff;
+            text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff;
+        }
+        49% {
+            color: #d9bcff;
+            text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 10px 3px #000;
+        }
+
+        60% {
+            color: #d9bcff;
+            text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 10px 3px #000;
+        }
+        100% {
+            color: #d9bcff;
+            text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, 0 10px 3px #000;
+        }
+    }
+    @keyframes cvTextAnim {
+        0% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        14% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        15% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 10px 3px #000;
+        }
+        16% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        47% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        48% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 10px 3px #000;
+        }
+        49% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        60% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        80% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        87% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        88% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 10px 3px #000;
+        }
+        89% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        90% {
+            color: #141414;
+            text-shadow: 0 0 4px #121212, 0 0 11px #121212, 0 0 19px #121212,
+                0 0 40px #121212, 0 10px 3px #000;
+        }
+        100% {
+            color: #141414;
+            text-shadow: 0 0 4px #121212, 0 0 11px #121212, 0 0 19px #121212,
+                0 0 40px #121212, 0 10px 3px #000;
+        }
+    }
+    @keyframes cvTextAfterAnim {
+        0% {
+            background: #facaf6;
+            box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        14% {
+            background: #facaf6;
+            box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        15% {
+            background: #facaf6;
+            box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 10px 3px #000;
+        }
+        16% {
+            background: #facaf6;
+            box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        47% {
+            background: #facaf6;
+            box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        48% {
+            background: #facaf6;
+            box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 10px 3px #000;
+        }
+        49% {
+            background: #facaf6;
+            box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        60% {
+            background: #facaf6;
+            box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        61% {
+            background: #141414;
+            box-shadow: 0 0 4px #121212, 0 0 11px #121212, 0 0 19px #121212,
+                0 0 40px #121212, 0 10px 3px #000;
+        }
+        100% {
+            background: #141414;
+            box-shadow: 0 0 4px #121212, 0 0 11px #121212, 0 0 19px #121212,
+                0 0 40px #121212, 0 10px 3px #000;
+        }
+    }
+    // ------------- Contact------------//
+    @keyframes contactTitleAnim {
+        0% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 10px 3px #000;
+        }
+        14% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 10px 3px #000;
+        }
+        15% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 10px 3px #000;
+        }
+        16% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 10px 3px #000;
+        }
+        47% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 10px 3px #000;
+        }
+        48% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 10px 3px #000;
+        }
+        49% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 10px 3px #000;
+        }
+        60% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 10px 3px #000;
+        }
+        100% {
+            color: #c8ceff;
+            text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+                0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
+                0 10px 3px #000;
+        }
+    }
+    @keyframes contactBeforeAfterAnim {
+        0% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, -10px 0px 3px #000;
+        }
+        14% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, -10px 0px 3px #000;
+        }
+        15% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff;
+        }
+        16% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, -10px 0px 3px #000;
+        }
+        47% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, -10px 0px 3px #000;
+        }
+        48% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff;
+        }
+        49% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, -10px 0px 3px #000;
+        }
+
+        60% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, -10px 0px 3px #000;
+        }
+        77% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, -10px 0px 3px #000;
+        }
+        78% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff;
+        }
+        79% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, -10px 0px 3px #000;
+        }
+        100% {
+            color: #d9bcff;
+            box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+                0 0 40px #6f00ff, -10px 0px 3px #000;
+        }
+    }
+    @keyframes contactTextAnim {
+        0% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        14% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        15% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 10px 3px #000;
+        }
+        16% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        47% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        48% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 10px 3px #000;
+        }
+        49% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        60% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        80% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        87% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        88% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 10px 3px #000;
+        }
+        89% {
+            color: #facaf6;
+            text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+                0 0 40px #ff00e8, 0 10px 3px #000;
+        }
+        90% {
+            color: #141414;
+            text-shadow: 0 0 4px #121212, 0 0 11px #121212, 0 0 19px #121212,
+                0 0 40px #121212, 0 10px 3px #000;
+        }
+        100% {
+            color: #141414;
+            text-shadow: 0 0 4px #121212, 0 0 11px #121212, 0 0 19px #121212,
+                0 0 40px #121212, 0 10px 3px #000;
+        }
+    }
+    // --------------------------------------------------//
+    main {
+        animation: 1s linear animationMain;
+        &.hide {
+            display: none;
+        }
+        header {
+            height: 100vh;
+            margin-bottom: 75vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            .header-content {
+                @include centerElement;
+                flex-direction: column;
+                height: 100%;
+            }
+            h1 {
+                color: #c8ceff;
+                font-size: 9rem;
+                font-weight: 200;
+                animation: 5s linear 1.3s infinite headerTitleAnim;
+            }
+            h2 {
+                color: #c8ceff;
+                font-size: 3rem;
+                font-weight: 400;
+                animation: 5s linear 1.4s infinite headerTitleAnim;
+            }
+            p {
+                color: #141414;
+                font-size: 3rem;
+                font-weight: 400;
+                animation: 5s 1.5s infinite headerBecomeAnim;
+            }
+            .arrow {
+                span {
+                    &:nth-child(1) i {
+                        color: #141414;
+                        text-shadow: none;
+                        animation: 3s linear 2s infinite headerArrowAnim;
+                    }
+                    &:nth-child(2) i {
+                        color: #141414;
+                        text-shadow: none;
+                        animation: 3s linear 3s infinite headerArrowAnim;
+                    }
+                    a {
+                        padding: 20px;
+                        @include centerElement;
+                        color: #141414;
+                        font-size: 3rem;
+                        font-weight: 50;
+                        text-decoration: none;
+                    }
+                }
+            }
+            @media screen and (max-width: 768px) {
+                h1 {
+                    font-size: 5rem;
+                }
+                h2 {
+                    font-size: 2em;
+                }
+                p {
+                    font-size: 2rem;
+                }
+                .arrow {
+                    span {
+                        a {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+        nav {
+            @include centerElement;
+            height: 100vh;
+            margin-bottom: 75vh;
+            position: relative;
+            width: 100%;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 80%;
+                height: 4px;
+                background-color: #d9bcff;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                bottom: -4px;
+                border-radius: 50px;
+                animation: navAfterAnim 15s infinite 0s;
+            }
+            i {
+                position: absolute;
+                font-size: 1rem;
+            }
+            i:nth-child(1) {
+                rotate: -15deg;
+                top: 15%;
+                left: 25%;
+                animation: 4s linear 0s infinite navIconAnim;
+            }
+            i:nth-child(2) {
+                rotate: 30deg;
+                top: 27%;
+                left: 55%;
+                animation: 3s linear 0.2s infinite navIconAnim;
+            }
+            i:nth-child(3) {
+                rotate: 30deg;
+                top: 20%;
+                left: 85%;
+                animation: 5s linear 0.7s infinite navIconAnim;
+            }
+            i:nth-child(4) {
+                rotate: 40deg;
+                top: 80%;
+                left: 8%;
+                animation: 4.5s linear 1s infinite navIconAnim;
+            }
+            i:nth-child(5) {
+                rotate: -9deg;
+                top: 70%;
+                left: 45%;
+                animation: 2s linear 0.5s infinite navIconAnim;
+            }
+            i:nth-child(6) {
+                rotate: -30deg;
+                top: 80%;
+                left: 80%;
+                animation: 3.2s linear 0s infinite navIconAnim;
+            }
+            ul {
+                @include centerElement;
+                width: 80%;
+                color: #ccfbd0;
+                li {
+                    position: relative;
+                    margin: 0 10%;
+                    &:hover {
+                        scale: 1.2;
+                    }
+
+                    &:nth-child(1) a {
+                        animation: 3s linear 0s infinite navLinkAnim;
+                    }
+                    &:nth-child(2) a {
+                        animation: 6s linear 0s infinite navLinkAnim;
+                    }
+                    &:nth-child(3) a {
+                        animation: 4s linear 0s infinite navLinkAnim;
+                    }
+
+                    a {
+                        color: #ccfbd0;
+                        font-size: 3rem;
+                        animation: 6s linear 3s infinite navLinkAnim;
+                        position: relative;
+                        z-index: 5;
+
+                        &:hover {
+                            scale: 1.3;
+                            transition: ease-in-out;
+                        }
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            width: 100%;
+                            height: 2px;
+                            right: 0%;
+                            top: 90%;
+                            background-color: #d9bcff;
+                            border-radius: 100px;
+                            animation: navAfterAnim 10s infinite 0s;
+                        }
+                    }
+                }
+            }
+            @media screen and (max-width: 768px) {
+                i:nth-child(2) {
+                    rotate: 30deg;
+                    top: 7%;
+                    left: 55%;
+                    animation: 3s linear 0.2s infinite navIconAnim;
+                }
+                i:nth-child(5) {
+                    rotate: -9deg;
+                    top: 90%;
+                    left: 45%;
+                    animation: 2s linear 0.5s infinite navIconAnim;
+                }
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    width: 80%;
+                    color: #ccfbd0;
+                    li {
+                        position: relative;
+                        margin: 20px 0;
+                        a {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+        section {
+            position: relative;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            height: 100vh;
+            margin-bottom: 75vh;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 10%;
+                height: 4px;
+                background-color: #ecffa1;
+                left: 50%;
+                border-radius: 999px;
+                rotate: -90deg;
+                animation: 5s linear infinite sectionBeforeAnim;
+            }
+            h2 {
+                color: #c8ceff;
+                width: 50%;
+                font-size: 4rem;
+                animation: 10s linear infinite sectionTitleAnim;
+            }
+            hr {
+                display: none;
+            }
+            ul {
+                font-size: 3rem;
+                width: 50%;
+                li {
+                    &:hover {
+                        scale: 1.3;
+                    }
+                    a {
+                        position: relative;
+                        animation: 6s linear infinite sectionTextAnim;
+                        z-index: 10;
+                        color: #141414;
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: 90%;
+                            left: 0;
+                            width: 100%;
+                            height: 3px;
+                            background-color: #141414;
+                            border-radius: 50px;
+                            animation: 6s linear infinite sectionTextAfterAnim;
+                        }
+                    }
+                }
+            }
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                &::before {
+                    display: none;
+                }
+                h2 {
+                    width: 80%;
+                    font-size: 3rem;
+                }
+                hr {
+                    display: block;
+                    position: relative;
+                    color: #d9bcff;
+                    background-color: #d9bcff;
+                    width: 30%;
+                    height: 4px;
+                    margin: 15px 0 25px 0;
+                    z-index: 100;
+                    animation: 5s linear infinite sectionBeforeResponsiveAnim;
+                }
+                ul {
+                    font-size: 2rem;
+                    width: 80%;
+                }
+            }
+        }
+        article {
+            height: 100vh;
+            margin-bottom: 75vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            h2 {
+                color: #141414;
+                width: 50%;
+                font-size: 4rem;
+                animation: 8s linear 0.5s infinite cvTitleAnim;
+            }
+            span {
+                padding: 5% 0;
+                i {
+                    text-decoration: none;
+                    color: #141414;
+                    animation: 5s linear infinite cvIconAnim;
+                    font-size: 7rem;
+                }
+            }
+            a {
+                padding-top: 5%;
+                animation: 10s linear infinite cvTextAnim;
+                font-size: 2rem;
+                color: #141414;
+                position: relative;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 95%;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #141414;
+                    border-radius: 50px;
+                    animation: 3s linear 3s infinite cvTextAfterAnim;
+                }
+            }
+            @media screen and (max-width: 768px) {
+                text-align: center;
+                h2 {
+                    font-size: 3rem;
+                }
+                span {
+                    padding: 10% 0;
+                    i {
+                        text-decoration: none;
+                        color: #141414;
+                        animation: 5s linear infinite cvIconAnim;
+                        font-size: 5rem;
+                    }
+                }
+                a {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        footer {
+            position: relative;
+            height: 100vh;
+            @include centerElement;
+            text-align: center;
+            &::before {
+                top: 10vh;
+                content: '';
+                position: absolute;
+                width: 80%;
+                height: 4px;
+                background-color: #ecffa1;
+                border-radius: 50px;
+                animation: 6s linear infinite contactBeforeAfterAnim;
+            }
+            &::after {
+                top: 15%;
+                content: '';
+                position: absolute;
+                width: 10%;
+                rotate: -90deg;
+                height: 4px;
+                top: 50%;
+                background-color: #ecffa1;
+                border-radius: 50px;
+                animation: 4s linear infinite contactBeforeAfterAnim;
+            }
+
+            h2 {
+                width: 50%;
+                font-size: 4rem;
+                color: #9fb4ff;
+                animation: 5s linear infinite contactTitleAnim;
+            }
+            .iconFooter {
+                width: 50%;
+                a {
+                    color: #9fb4ff;
+                    font-size: 2rem;
+                    margin: 20px;
+                    animation: 2s linear infinite contactTextAnim;
+                    i:hover {
+                        scale: 1.3;
+                        transition: 0.2s ease-in-out;
+                    }
+                }
+            }
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+                &::after {
+                    display: none;
+                }
+                h2 {
+                    width: 90%;
+                    font-size: 3rem;
+                }
+                hr {
+                    display: block;
+                    position: relative;
+                    color: #d9bcff;
+                    background-color: #d9bcff;
+                    width: 30%;
+                    height: 4px;
+                    margin: 15px 0 25px 0;
+                    z-index: 100;
+                    animation: 5s linear infinite sectionBeforeResponsiveAnim;
+                }
+                .iconFooter {
+                    width: 90%;
+                    margin-top: 25px;
+                    a {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
