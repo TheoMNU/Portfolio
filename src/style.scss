@@ -40,6 +40,7 @@ a {
 //----------------------------------------------- Body-------------------------------------------//
 body {
     background-color: #111111;
+    -webkit-box-reflect: below -5px linear-gradient(to bottom, transparent, black);
 
     // -------------------- animation intro----------------
     .intro {
@@ -1555,7 +1556,7 @@ body {
                 @include centerElement;
                 width: 80%;
                 color: #ccfbd0;
-                -webkit-box-reflect: below -5px linear-gradient(to bottom, transparent, black);
+
                 li {
                     position: relative;
                     margin: 0 10%;

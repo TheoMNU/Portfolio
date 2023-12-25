@@ -17,6 +17,7 @@ a:hover {
 
 body {
   background-color: #111111;
+  -webkit-box-reflect: below -5px linear-gradient(to bottom, transparent, black);
 }
 body .intro {
   background-color: #111111;
@@ -1299,7 +1300,6 @@ body main nav ul {
   align-items: center;
   width: 80%;
   color: #ccfbd0;
-  -webkit-box-reflect: below -5px linear-gradient(to bottom, transparent, black);
 }
 body main nav ul li {
   position: relative;
