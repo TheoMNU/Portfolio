@@ -92,24 +92,36 @@ body {
                 overflow: visible;
             }
             h1 {
-                color: #c8ceff;
+                visibility: hidden;
+                color: #141414;
                 font-size: 9rem;
-                font-weight: 100;
                 width: 100%;
                 animation: 5s linear 1.3s infinite headerTitleAnim;
             }
-            h2 {
+            hr {
+                position: relative;
                 color: #c8ceff;
+                background: #c8ceff;
+                border-radius: 50px;
+                width: 50%;
+                height: 4px;
+                margin: 0 0 25px 0;
+                z-index: 100;
+                animation: 5s linear 1.4s infinite headerHrAnim;
+                visibility: hidden;
+            }
+            h2 {
+                color: #141414;
                 font-size: 3rem;
-                font-weight: 400;
-                animation: 5s linear 1.4s infinite headerTitleAnim;
+                animation: 5s linear 1.4s infinite headerTitle2Anim;
+                visibility: hidden;
             }
             p {
                 color: #141414;
                 font-size: 3rem;
-                font-weight: 400;
-
+                font-weight: 600;
                 animation: 5s 1.5s infinite headerBecomeAnim;
+                visibility: hidden;
             }
             .arrow {
                 span {
@@ -117,11 +129,13 @@ body {
                         color: #141414;
                         text-shadow: none;
                         animation: 3s linear 2s infinite headerArrowAnim;
+                        visibility: hidden;
                     }
                     &:nth-child(2) i {
                         color: #141414;
                         text-shadow: none;
                         animation: 3s linear 3s infinite headerArrowAnim;
+                        visibility: hidden;
                     }
                     a {
                         padding: 20px;
@@ -237,6 +251,7 @@ body {
                     a {
                         color: #ccfbd0;
                         font-size: 3rem;
+                        font-weight: 600;
                         animation: 6s linear 3s infinite navLinkAnim;
                         position: relative;
                         z-index: 5;
@@ -261,16 +276,12 @@ body {
             }
             @media screen and (max-width: 768px) {
                 i:nth-child(2) {
-                    rotate: 30deg;
                     top: 7%;
                     left: 55%;
-                    animation: 3s linear 0.2s infinite navIconAnim;
                 }
                 i:nth-child(5) {
-                    rotate: -9deg;
                     top: 90%;
                     left: 45%;
-                    animation: 2s linear 0.5s infinite navIconAnim;
                 }
                 ul {
                     display: flex;
@@ -311,6 +322,7 @@ body {
             h2 {
                 color: #c8ceff;
                 font-size: 4rem;
+                font-weight: 600;
                 animation: 10s linear infinite navLinkAnim;
                 margin-right: 20%;
             }
@@ -322,10 +334,9 @@ body {
                 li {
                     display: flex;
                     flex-direction: column;
-                    text-align: left;
                     a {
                         position: relative;
-                        animation: 6s linear infinite navIconAnim;
+                        animation: 6s linear infinite sectionTextAnim;
                         z-index: 10;
                         color: #141414;
                         margin: 10px 0;
@@ -400,6 +411,7 @@ body {
                 color: #141414;
                 width: 50%;
                 font-size: 4rem;
+                font-weight: 600;
                 animation: 8s linear 0.5s infinite navLinkAnim;
             }
             span {
@@ -413,7 +425,7 @@ body {
             }
             a {
                 padding-top: 5%;
-                animation: 6s linear infinite navIconAnim;
+                animation: 6s linear infinite sectionTextAnim;
                 font-size: 2rem;
                 color: #141414;
                 position: relative;
@@ -479,6 +491,7 @@ body {
             h2 {
                 width: 50%;
                 font-size: 4rem;
+                font-weight: 600;
                 color: #9fb4ff;
                 animation: 5s linear infinite navLinkAnim;
             }
@@ -488,7 +501,15 @@ body {
                     color: #9fb4ff;
                     font-size: 2rem;
                     margin: 20px;
-                    animation: 2s linear infinite headerArrowAnim;
+                    &:nth-child(1) {
+                        animation: 4s linear 0.2s infinite sectionTextAnim;
+                    }
+                    &:nth-child(2) {
+                        animation: 4s linear 0.6s infinite sectionTextAnim;
+                    }
+                    &:nth-child(3) {
+                        animation: 4s linear 0.4s infinite sectionTextAnim;
+                    }
                     i:hover {
                         scale: 1.3;
                         transition: 0.2s ease-in-out;

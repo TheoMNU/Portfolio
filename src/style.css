@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Vibur", cursive;
+  font-family: "Ms Madi", cursive, "Vibur", cursive;
   list-style: none;
   scroll-behavior: smooth;
 }
@@ -144,6 +144,10 @@ a:hover {
 }
 @keyframes headerTitleAnim {
   0% {
+    visibility: hidden;
+  }
+  1% {
+    visibility: visible;
     color: #c8ceff;
     text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff, 0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff, 0 0 150px #001fff, 0 5px 3px #c8ceff;
   }
@@ -180,8 +184,123 @@ a:hover {
     text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff, 0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff, 0 0 150px #001fff, 0 5px 3px #c8ceff;
   }
 }
+@keyframes headerHrAnim {
+  0% {
+    visibility: hidden;
+    color: #c8ceff;
+    backrground: #c8ceff;
+    box-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff, 0 0 40px #001fff, 0 3px 5px #c8ceff;
+  }
+  1% {
+    visibility: visible;
+    color: #c8ceff;
+    backrground: #c8ceff;
+    box-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff, 0 0 40px #001fff, 0 3px 5px #c8ceff;
+  }
+  14% {
+    color: #c8ceff;
+    backrground: #c8ceff;
+    box-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff, 0 0 40px #001fff, 0 3px 5px #c8ceff;
+  }
+  15% {
+    color: #c8ceff;
+    backrground: #c8ceff;
+    box-shadow: 0 0 4px #001fff;
+  }
+  16% {
+    color: #c8ceff;
+    backrground: #c8ceff;
+    box-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff, 0 0 40px #001fff, 0 3px 5px #c8ceff;
+  }
+  47% {
+    color: #c8ceff;
+    backrground: #c8ceff;
+    box-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff, 0 0 40px #001fff, 0 3px 5px #c8ceff;
+  }
+  48% {
+    color: #c8ceff;
+    backrground: #c8ceff;
+    box-shadow: 0 0 4px #001fff;
+  }
+  49% {
+    color: #c8ceff;
+    backrground: #c8ceff;
+    box-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff, 0 0 40px #001fff, 0 3px 5px #c8ceff;
+  }
+  60% {
+    color: #c8ceff;
+    backrground: #c8ceff;
+    box-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff, 0 0 40px #001fff, 0 3px 5px #c8ceff;
+  }
+  77% {
+    color: #c8ceff;
+    backrground: #c8ceff;
+    box-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff, 0 0 40px #001fff, 0 3px 5px #c8ceff;
+  }
+  78% {
+    color: #c8ceff;
+    backrground: #c8ceff;
+    box-shadow: 0 0 4px #001fff;
+  }
+  79% {
+    color: #c8ceff;
+    backrground: #c8ceff;
+    box-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff, 0 0 40px #001fff, 0 3px 5px #c8ceff;
+  }
+  100% {
+    color: #c8ceff;
+    backrground: #c8ceff;
+    box-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff, 0 0 40px #001fff, 0 3px 5px #c8ceff;
+  }
+}
+@keyframes headerTitle2Anim {
+  0% {
+    visibility: hidden;
+  }
+  1% {
+    visibility: visible;
+    color: #d9bcff;
+    text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff, 0 0 40px #6f00ff, 0 0 80px #6f00ff, 0 0 100px #6f00ff, 0 0 150px #6f00ff, 0 5px 3px #d9bcff;
+  }
+  14% {
+    color: #d9bcff;
+    text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff, 0 0 40px #6f00ff, 0 0 80px #6f00ff, 0 0 100px #6f00ff, 0 0 150px #6f00ff, 0 5px 3px #d9bcff;
+  }
+  15% {
+    color: #d9bcff;
+    text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 5px 3px #d9bcff;
+  }
+  16% {
+    color: #d9bcff;
+    text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff, 0 0 40px #6f00ff, 0 0 80px #6f00ff, 0 0 100px #6f00ff, 0 0 150px #6f00ff, 0 5px 3px #d9bcff;
+  }
+  47% {
+    color: #d9bcff;
+    text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff, 0 0 40px #6f00ff, 0 0 80px #6f00ff, 0 0 100px #6f00ff, 0 0 150px #6f00ff, 0 5px 3px #d9bcff;
+  }
+  48% {
+    color: #d9bcff;
+    text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 5px 3px #d9bcff;
+  }
+  49% {
+    color: #d9bcff;
+    text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff, 0 0 40px #6f00ff, 0 0 80px #6f00ff, 0 0 100px #6f00ff, 0 0 150px #6f00ff, 0 5px 3px #d9bcff;
+  }
+  60% {
+    color: #d9bcff;
+    text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff, 0 0 40px #6f00ff, 0 0 80px #6f00ff, 0 0 100px #6f00ff, 0 0 150px #6f00ff, 0 5px 3px #d9bcff;
+  }
+  100% {
+    color: #d9bcff;
+    text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff, 0 0 40px #6f00ff, 0 0 80px #6f00ff, 0 0 100px #6f00ff, 0 0 150px #6f00ff, 0 5px 3px #d9bcff;
+  }
+}
 @keyframes headerBecomeAnim {
   0% {
+    visibility: hidden;
+  }
+  1% {
+    visibility: visible;
     color: #d9bcff;
     text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff, 0 0 40px #6f00ff, 0 5px 3px #d9bcff;
   }
@@ -224,6 +343,10 @@ a:hover {
 }
 @keyframes headerArrowAnim {
   0% {
+    visibility: hidden;
+  }
+  1% {
+    visibility: visible;
     color: #facaf6;
     text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8, 0 0 40px #ff00e8, 0 5px 3px #facaf6;
   }
@@ -498,6 +621,52 @@ a:hover {
     box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff, 0 0 40px #6f00ff, 0 3px 5px #d9bcff;
   }
 }
+@keyframes sectionTextAnim {
+  0% {
+    color: #facaf6;
+    text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8, 0 0 40px #ff00e8, 0 5px 3px #facaf6;
+  }
+  14% {
+    color: #facaf6;
+    text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8, 0 0 40px #ff00e8, 0 5px 3px #facaf6;
+  }
+  15% {
+    color: #facaf6;
+    text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 5px 3px #facaf6;
+  }
+  16% {
+    color: #facaf6;
+    text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8, 0 0 40px #ff00e8, 0 5px 3px #facaf6;
+  }
+  47% {
+    color: #facaf6;
+    text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8, 0 0 40px #ff00e8, 0 5px 3px #facaf6;
+  }
+  48% {
+    color: #facaf6;
+    text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 5px 3px #facaf6;
+  }
+  49% {
+    color: #facaf6;
+    text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8, 0 0 40px #ff00e8, 0 5px 3px #facaf6;
+  }
+  60% {
+    color: #facaf6;
+    text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8, 0 0 40px #ff00e8, 0 5px 3px #facaf6;
+  }
+  90% {
+    color: #facaf6;
+    text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8, 0 0 40px #ff00e8, 0 5px 3px #facaf6;
+  }
+  91% {
+    color: #141414;
+    text-shadow: 0 0 4px #121212, 0 0 11px #121212, 0 0 19px #121212, 0 0 40px #121212, 0 5px 3px #121212;
+  }
+  100% {
+    color: #141414;
+    text-shadow: 0 0 4px #121212, 0 0 11px #121212, 0 0 19px #121212, 0 0 40px #121212, 0 5px 3px #121212;
+  }
+}
 @keyframes sectionTextAfterAnim {
   0% {
     background: #ffc0fc;
@@ -543,11 +712,11 @@ a:hover {
     background: #ffc0fc;
     box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 5px 3px #ffc0fc;
   }
-  89% {
+  94% {
     background: #ffc0fc;
     box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8, 0 0 40px #ff00e8, 0 5px 3px #ffc0fc;
   }
-  90% {
+  95% {
     background: #141414;
     box-shadow: 0 0 4px #121212, 0 0 11px #121212, 0 0 19px #121212, 0 0 40px #121212, 0 5px 3px #141414;
   }
@@ -783,33 +952,48 @@ body main header .header-content {
   overflow: visible;
 }
 body main header h1 {
-  color: #c8ceff;
+  visibility: hidden;
+  color: #141414;
   font-size: 9rem;
-  font-weight: 100;
   width: 100%;
   animation: 5s linear 1.3s infinite headerTitleAnim;
 }
-body main header h2 {
+body main header hr {
+  position: relative;
   color: #c8ceff;
+  background: #c8ceff;
+  border-radius: 50px;
+  width: 50%;
+  height: 4px;
+  margin: 0 0 25px 0;
+  z-index: 100;
+  animation: 5s linear 1.4s infinite headerHrAnim;
+  visibility: hidden;
+}
+body main header h2 {
+  color: #141414;
   font-size: 3rem;
-  font-weight: 400;
-  animation: 5s linear 1.4s infinite headerTitleAnim;
+  animation: 5s linear 1.4s infinite headerTitle2Anim;
+  visibility: hidden;
 }
 body main header p {
   color: #141414;
   font-size: 3rem;
-  font-weight: 400;
+  font-weight: 600;
   animation: 5s 1.5s infinite headerBecomeAnim;
+  visibility: hidden;
 }
 body main header .arrow span:nth-child(1) i {
   color: #141414;
   text-shadow: none;
   animation: 3s linear 2s infinite headerArrowAnim;
+  visibility: hidden;
 }
 body main header .arrow span:nth-child(2) i {
   color: #141414;
   text-shadow: none;
   animation: 3s linear 3s infinite headerArrowAnim;
+  visibility: hidden;
 }
 body main header .arrow span a {
   padding: 20px;
@@ -923,6 +1107,7 @@ body main nav ul li:nth-child(3) a {
 body main nav ul li a {
   color: #ccfbd0;
   font-size: 3rem;
+  font-weight: 600;
   animation: 6s linear 3s infinite navLinkAnim;
   position: relative;
   z-index: 5;
@@ -944,16 +1129,12 @@ body main nav ul li a:after {
 }
 @media screen and (max-width: 768px) {
   body main nav i:nth-child(2) {
-    rotate: 30deg;
     top: 7%;
     left: 55%;
-    animation: 3s linear 0.2s infinite navIconAnim;
   }
   body main nav i:nth-child(5) {
-    rotate: -9deg;
     top: 90%;
     left: 45%;
-    animation: 2s linear 0.5s infinite navIconAnim;
   }
   body main nav ul {
     display: flex;
@@ -994,6 +1175,7 @@ body main section::before {
 body main section h2 {
   color: #c8ceff;
   font-size: 4rem;
+  font-weight: 600;
   animation: 10s linear infinite navLinkAnim;
   margin-right: 20%;
 }
@@ -1006,11 +1188,10 @@ body main section .real-list {
 body main section .real-list li {
   display: flex;
   flex-direction: column;
-  text-align: left;
 }
 body main section .real-list li a {
   position: relative;
-  animation: 6s linear infinite navIconAnim;
+  animation: 6s linear infinite sectionTextAnim;
   z-index: 10;
   color: #141414;
   margin: 10px 0;
@@ -1081,6 +1262,7 @@ body main article h2 {
   color: #141414;
   width: 50%;
   font-size: 4rem;
+  font-weight: 600;
   animation: 8s linear 0.5s infinite navLinkAnim;
 }
 body main article span {
@@ -1094,7 +1276,7 @@ body main article span i {
 }
 body main article a {
   padding-top: 5%;
-  animation: 6s linear infinite navIconAnim;
+  animation: 6s linear infinite sectionTextAnim;
   font-size: 2rem;
   color: #141414;
   position: relative;
@@ -1163,6 +1345,7 @@ body main footer::after {
 body main footer h2 {
   width: 50%;
   font-size: 4rem;
+  font-weight: 600;
   color: #9fb4ff;
   animation: 5s linear infinite navLinkAnim;
 }
@@ -1173,7 +1356,15 @@ body main footer .iconFooter a {
   color: #9fb4ff;
   font-size: 2rem;
   margin: 20px;
-  animation: 2s linear infinite headerArrowAnim;
+}
+body main footer .iconFooter a:nth-child(1) {
+  animation: 4s linear 0.2s infinite sectionTextAnim;
+}
+body main footer .iconFooter a:nth-child(2) {
+  animation: 4s linear 0.6s infinite sectionTextAnim;
+}
+body main footer .iconFooter a:nth-child(3) {
+  animation: 4s linear 0.4s infinite sectionTextAnim;
 }
 body main footer .iconFooter a i:hover {
   scale: 1.3;

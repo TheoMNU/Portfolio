@@ -17,12 +17,8 @@ mainVisible()
 
 // ------------------------------------------------------
 let projects = [
-    `<a href="../../"
-><i class="fa-brands fa-spotify"></i>Spoticlone</a
->`,
-    `<a href="#"
-><i class="fa-solid fa-worm"></i>Men in blate</a
->`,
+    `<a href="../../"><i class="fa-brands fa-spotify"></i>Spoticlone</a>`,
+    `<a href="#"><i class="fa-solid fa-worm"></i>Men in blate</a>`,
 ]
 
 const realList = document.querySelector('#realList')

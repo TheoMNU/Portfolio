@@ -194,12 +194,7 @@
         background-color: #111;
     }
 }
-// @keyframes neonH {
-//     to {
-//         text-shadow: 0 0 4px #c7ccff, 0 0 11px #c7ccff, 0 0 19px #0015ee,
-//             0 0 40px #0015ee, 0 0 80px #0015ee;
-//     }
-// }
+
 // @keyframes neonP {
 //     to {
 //         text-shadow: 0 0 4px #e1c9ff, 0 0 11px #e1c9ff, 0 0 19px #7100ff,
@@ -209,6 +204,10 @@
 // ----------------header--------------- //
 @keyframes headerTitleAnim {
     0% {
+        visibility: hidden;
+    }
+    1% {
+        visibility: visible;
         color: #c8ceff;
         text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
             0 0 40px #001fff, 0 0 80px #001fff, 0 0 100px #001fff,
@@ -259,8 +258,147 @@
             0 0 150px #001fff, 0 5px 3px #c8ceff;
     }
 }
+@keyframes headerHrAnim {
+    0% {
+        visibility: hidden;
+        color: #c8ceff;
+        backrground: #c8ceff;
+        box-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+            0 0 40px #001fff, 0 3px 5px #c8ceff;
+    }
+    1% {
+        visibility: visible;
+        color: #c8ceff;
+        backrground: #c8ceff;
+        box-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+            0 0 40px #001fff, 0 3px 5px #c8ceff;
+    }
+    14% {
+        color: #c8ceff;
+        backrground: #c8ceff;
+        box-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+            0 0 40px #001fff, 0 3px 5px #c8ceff;
+    }
+    15% {
+        color: #c8ceff;
+        backrground: #c8ceff;
+        box-shadow: 0 0 4px #001fff;
+    }
+    16% {
+        color: #c8ceff;
+        backrground: #c8ceff;
+        box-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+            0 0 40px #001fff, 0 3px 5px #c8ceff;
+    }
+    47% {
+        color: #c8ceff;
+        backrground: #c8ceff;
+        box-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+            0 0 40px #001fff, 0 3px 5px #c8ceff;
+    }
+    48% {
+        color: #c8ceff;
+        backrground: #c8ceff;
+        box-shadow: 0 0 4px #001fff;
+    }
+    49% {
+        color: #c8ceff;
+        backrground: #c8ceff;
+        box-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+            0 0 40px #001fff, 0 3px 5px #c8ceff;
+    }
+    60% {
+        color: #c8ceff;
+        backrground: #c8ceff;
+        box-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+            0 0 40px #001fff, 0 3px 5px #c8ceff;
+    }
+    77% {
+        color: #c8ceff;
+        backrground: #c8ceff;
+        box-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+            0 0 40px #001fff, 0 3px 5px #c8ceff;
+    }
+    78% {
+        color: #c8ceff;
+        backrground: #c8ceff;
+        box-shadow: 0 0 4px #001fff;
+    }
+    79% {
+        color: #c8ceff;
+        backrground: #c8ceff;
+        box-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+            0 0 40px #001fff, 0 3px 5px #c8ceff;
+    }
+    100% {
+        color: #c8ceff;
+        backrground: #c8ceff;
+        box-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+            0 0 40px #001fff, 0 3px 5px #c8ceff;
+    }
+}
+@keyframes headerTitle2Anim {
+    0% {
+        visibility: hidden;
+    }
+    1% {
+        visibility: visible;
+        color: #d9bcff;
+        text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+            0 0 40px #6f00ff, 0 0 80px #6f00ff, 0 0 100px #6f00ff,
+            0 0 150px #6f00ff, 0 5px 3px #d9bcff;
+    }
+    14% {
+        color: #d9bcff;
+        text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+            0 0 40px #6f00ff, 0 0 80px #6f00ff, 0 0 100px #6f00ff,
+            0 0 150px #6f00ff, 0 5px 3px #d9bcff;
+    }
+    15% {
+        color: #d9bcff;
+        text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 5px 3px #d9bcff;
+    }
+    16% {
+        color: #d9bcff;
+        text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+            0 0 40px #6f00ff, 0 0 80px #6f00ff, 0 0 100px #6f00ff,
+            0 0 150px #6f00ff, 0 5px 3px #d9bcff;
+    }
+    47% {
+        color: #d9bcff;
+        text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+            0 0 40px #6f00ff, 0 0 80px #6f00ff, 0 0 100px #6f00ff,
+            0 0 150px #6f00ff, 0 5px 3px #d9bcff;
+    }
+    48% {
+        color: #d9bcff;
+        text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 5px 3px #d9bcff;
+    }
+    49% {
+        color: #d9bcff;
+        text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+            0 0 40px #6f00ff, 0 0 80px #6f00ff, 0 0 100px #6f00ff,
+            0 0 150px #6f00ff, 0 5px 3px #d9bcff;
+    }
+    60% {
+        color: #d9bcff;
+        text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+            0 0 40px #6f00ff, 0 0 80px #6f00ff, 0 0 100px #6f00ff,
+            0 0 150px #6f00ff, 0 5px 3px #d9bcff;
+    }
+    100% {
+        color: #d9bcff;
+        text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+            0 0 40px #6f00ff, 0 0 80px #6f00ff, 0 0 100px #6f00ff,
+            0 0 150px #6f00ff, 0 5px 3px #d9bcff;
+    }
+}
 @keyframes headerBecomeAnim {
     0% {
+        visibility: hidden;
+    }
+    1% {
+        visibility: visible;
         color: #d9bcff;
         text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
             0 0 40px #6f00ff, 0 5px 3px #d9bcff;
@@ -310,6 +448,10 @@
 }
 @keyframes headerArrowAnim {
     0% {
+        visibility: hidden;
+    }
+    1% {
+        visibility: visible;
         color: #facaf6;
         text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
             0 0 40px #ff00e8, 0 5px 3px #facaf6;
@@ -767,6 +909,61 @@
 //             0 0 40px #121212, 0 10px 3px #000;
 //     }
 // }
+@keyframes sectionTextAnim {
+    0% {
+        color: #facaf6;
+        text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+            0 0 40px #ff00e8, 0 5px 3px #facaf6;
+    }
+    14% {
+        color: #facaf6;
+        text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+            0 0 40px #ff00e8, 0 5px 3px #facaf6;
+    }
+    15% {
+        color: #facaf6;
+        text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 5px 3px #facaf6;
+    }
+    16% {
+        color: #facaf6;
+        text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+            0 0 40px #ff00e8, 0 5px 3px #facaf6;
+    }
+    47% {
+        color: #facaf6;
+        text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+            0 0 40px #ff00e8, 0 5px 3px #facaf6;
+    }
+    48% {
+        color: #facaf6;
+        text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 5px 3px #facaf6;
+    }
+    49% {
+        color: #facaf6;
+        text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+            0 0 40px #ff00e8, 0 5px 3px #facaf6;
+    }
+    60% {
+        color: #facaf6;
+        text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+            0 0 40px #ff00e8, 0 5px 3px #facaf6;
+    }
+    90% {
+        color: #facaf6;
+        text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+            0 0 40px #ff00e8, 0 5px 3px #facaf6;
+    }
+    91% {
+        color: #141414;
+        text-shadow: 0 0 4px #121212, 0 0 11px #121212, 0 0 19px #121212,
+            0 0 40px #121212, 0 5px 3px #121212;
+    }
+    100% {
+        color: #141414;
+        text-shadow: 0 0 4px #121212, 0 0 11px #121212, 0 0 19px #121212,
+            0 0 40px #121212, 0 5px 3px #121212;
+    }
+}
 @keyframes sectionTextAfterAnim {
     0% {
         background: #ffc0fc;
@@ -820,12 +1017,12 @@
         background: #ffc0fc;
         box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 5px 3px #ffc0fc;
     }
-    89% {
+    94% {
         background: #ffc0fc;
         box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
             0 0 40px #ff00e8, 0 5px 3px #ffc0fc;
     }
-    90% {
+    95% {
         background: #141414;
         box-shadow: 0 0 4px #121212, 0 0 11px #121212, 0 0 19px #121212,
             0 0 40px #121212, 0 5px 3px #141414;
