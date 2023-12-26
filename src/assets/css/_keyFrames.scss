@@ -1424,72 +1424,185 @@
             0 0 40px #6f00ff, -5px 0px 3px #d9bcff;
     }
 }
-// @keyframes contactTextAnim {
-//     0% {
-//         color: #facaf6;
-//         text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
-//             0 0 40px #ff00e8, 0 10px 3px #000;
-//     }
-//     14% {
-//         color: #facaf6;
-//         text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
-//             0 0 40px #ff00e8, 0 10px 3px #000;
-//     }
-//     15% {
-//         color: #facaf6;
-//         text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 10px 3px #000;
-//     }
-//     16% {
-//         color: #facaf6;
-//         text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
-//             0 0 40px #ff00e8, 0 10px 3px #000;
-//     }
-//     47% {
-//         color: #facaf6;
-//         text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
-//             0 0 40px #ff00e8, 0 10px 3px #000;
-//     }
-//     48% {
-//         color: #facaf6;
-//         text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 10px 3px #000;
-//     }
-//     49% {
-//         color: #facaf6;
-//         text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
-//             0 0 40px #ff00e8, 0 10px 3px #000;
-//     }
-//     60% {
-//         color: #facaf6;
-//         text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
-//             0 0 40px #ff00e8, 0 10px 3px #000;
-//     }
-//     80% {
-//         color: #facaf6;
-//         text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
-//             0 0 40px #ff00e8, 0 10px 3px #000;
-//     }
-//     87% {
-//         color: #facaf6;
-//         text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
-//             0 0 40px #ff00e8, 0 10px 3px #000;
-//     }
-//     88% {
-//         color: #facaf6;
-//         text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 10px 3px #000;
-//     }
-//     89% {
-//         color: #facaf6;
-//         text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
-//             0 0 40px #ff00e8, 0 10px 3px #000;
-//     }
-//     90% {
-//         color: #141414;
-//         text-shadow: 0 0 4px #121212, 0 0 11px #121212, 0 0 19px #121212,
-//             0 0 40px #121212, 0 10px 3px #000;
-//     }
-//     100% {
-//         color: #141414;
-//         text-shadow: 0 0 4px #121212, 0 0 11px #121212, 0 0 19px #121212,
-//             0 0 40px #121212, 0 10px 3px #000;
-//     }
-// }
+// --------------- Arrow ------------ //
+@keyframes arrowBoxAnim {
+    0% {
+        box-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+            0 0 40px #001fff, 0 0 80px #001fff, 0 2px 3px #c8ceff;
+    }
+    11% {
+        box-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+            0 0 40px #001fff, 0 0 80px #001fff, 0 2px 3px #c8ceff;
+    }
+    12% {
+        box-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 2px 3px #c8ceff;
+    }
+    13% {
+        box-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+            0 0 40px #001fff, 0 0 80px #001fff, 0 2px 3px #c8ceff;
+    }
+    31% {
+        box-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+            0 0 40px #001fff, 0 0 80px #001fff, 0 2px 3px #c8ceff;
+    }
+    32% {
+        box-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 2px 3px #c8ceff;
+    }
+    33% {
+        box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+            0 0 40px #6f00ff, 0 0 80px #6f00ff, 0 2px 3px #d9bcff;
+    }
+    54% {
+        box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+            0 0 40px #6f00ff, 0 0 80px #6f00ff, 0 2px 3px #d9bcff;
+    }
+    55% {
+        box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 2px 3px #d9bcff;
+    }
+    56% {
+        box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+            0 0 40px #6f00ff, 0 0 80px #6f00ff, 0 2px 3px #d9bcff;
+    }
+    64% {
+        box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+            0 0 40px #6f00ff, 0 0 80px #6f00ff, 0 2px 3px #d9bcff;
+    }
+    65% {
+        box-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 2px 3px #d9bcff;
+    }
+    66% {
+        box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+            0 0 40px #ff00e8, 0 0 80px #ff00e8, 0 2px 3px #facaf6;
+    }
+    74% {
+        box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+            0 0 40px #ff00e8, 0 0 80px #ff00e8, 0 2px 3px #facaf6;
+    }
+    75% {
+        box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 2px 3px #facaf6;
+    }
+    76% {
+        box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+            0 0 40px #ff00e8, 0 0 80px #ff00e8, 0 2px 3px #facaf6;
+    }
+    95% {
+        box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+            0 0 40px #ff00e8, 0 0 80px #ff00e8, 0 2px 3px #facaf6;
+    }
+    96% {
+        box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 2px 3px #facaf6;
+    }
+    97% {
+        box-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+            0 0 40px #ff00e8, 0 0 80px #ff00e8, 0 2px 3px #facaf6;
+    }
+    98% {
+        box-shadow: 0 0 4px #121212, 0 0 11px #121212, 0 0 19px #121212,
+            0 0 40px #121212, 0 10px 3px #000;
+    }
+    100% {
+        box-shadow: 0 0 4px #121212, 0 0 11px #121212, 0 0 19px #121212,
+            0 0 40px #121212, 0 10px 3px #000;
+    }
+}
+@keyframes arrowTopAnim {
+    0% {
+        color: #c8ceff;
+        text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+            0 0 40px #001fff, 0 0 80px #001fff;
+    }
+    21% {
+        color: #c8ceff;
+        text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+            0 0 40px #001fff, 0 0 80px #001fff;
+    }
+    22% {
+        color: #c8ceff;
+        text-shadow: 0 0 4px #001fff, 0 0 11px #001fff;
+    }
+    23% {
+        color: #c8ceff;
+        text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+            0 0 40px #001fff, 0 0 80px #001fff;
+    }
+    31% {
+        color: #c8ceff;
+        text-shadow: 0 0 4px #001fff, 0 0 11px #001fff, 0 0 19px #001fff,
+            0 0 40px #001fff, 0 0 80px #001fff;
+    }
+    32% {
+        color: #c8ceff;
+        text-shadow: 0 0 4px #001fff, 0 0 11px #001fff;
+    }
+    33% {
+        color: #d9bcff;
+        text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+            0 0 40px #6f00ff, 0 0 80px #6f00ff;
+    }
+    41% {
+        color: #d9bcff;
+        text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+            0 0 40px #6f00ff, 0 0 80px #6f00ff;
+    }
+    42% {
+        color: #d9bcff;
+        text-shadow: 0 0 4px #001fff, 0 0 11px #001fff;
+    }
+    43% {
+        color: #d9bcff;
+        text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+            0 0 40px #6f00ff, 0 0 80px #6f00ff;
+    }
+    64% {
+        color: #d9bcff;
+        text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff, 0 0 19px #6f00ff,
+            0 0 40px #6f00ff, 0 0 80px #6f00ff;
+    }
+    65% {
+        color: #d9bcff;
+        text-shadow: 0 0 4px #6f00ff, 0 0 11px #6f00ff;
+    }
+    66% {
+        color: #facaf6;
+        text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+            0 0 40px #ff00e8, 0 0 80px #ff00e8;
+    }
+    84% {
+        color: #facaf6;
+        text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+            0 0 40px #ff00e8, 0 0 80px #ff00e8;
+    }
+    85% {
+        color: #facaf6;
+        text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8;
+    }
+    86% {
+        color: #facaf6;
+        text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+            0 0 40px #ff00e8, 0 0 80px #ff00e8;
+    }
+    95% {
+        color: #facaf6;
+        text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+            0 0 40px #ff00e8, 0 0 80px #ff00e8;
+    }
+    96% {
+        color: #facaf6;
+        text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8;
+    }
+    97% {
+        color: #facaf6;
+        text-shadow: 0 0 4px #ff00e8, 0 0 11px #ff00e8, 0 0 19px #ff00e8,
+            0 0 40px #ff00e8, 0 0 80px #ff00e8;
+    }
+    98% {
+        color: #141414;
+        text-shadow: 0 0 4px #121212, 0 0 11px #121212, 0 0 19px #121212,
+            0 0 40px #121212, 0 10px 3px #000;
+    }
+    100% {
+        color: #141414;
+        text-shadow: 0 0 4px #121212, 0 0 11px #121212, 0 0 19px #121212,
+            0 0 40px #121212, 0 10px 3px #000;
+    }
+}

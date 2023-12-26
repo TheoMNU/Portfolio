@@ -558,26 +558,23 @@ body {
         }
         .arrow-top {
             position: relative;
-            &.active {
-                display: block;
-                span {
+            span {
+                @include centerElement;
+                position: fixed;
+                font-size: 2rem;
+                border-radius: 50px;
+                background-color: #141414;
+                width: 50px;
+                content: '';
+                right: 20px;
+                height: 50px;
+                animation: 10s linear infinite arrowBoxAnim;
+                top: 90vh;
+                right: 20px;
+                a {
                     @include centerElement;
-                    position: fixed;
-                    font-size: 2rem;
-                    border-radius: 50px;
-                    background-color: #141414;
-                    width: 50px;
-                    content: '';
-                    right: 20px;
-                    height: 50px;
-                    animation: 10s linear infinite arrowBoxAnim;
-                    top: 90vh;
-                    right: 20px;
-                    a {
-                        @include centerElement;
-                        animation: 10s linear infinite arrowTopAnim;
-                        color: #121212;
-                    }
+                    animation: 10s linear infinite arrowTopAnim;
+                    color: #121212;
                 }
             }
         }

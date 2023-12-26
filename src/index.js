@@ -35,3 +35,19 @@ function projectList() {
 }
 
 projectList()
+
+// --------------------------- Btn------------------------------ //
+
+let btnTop = document.querySelector('.arrow-top')
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > window.innerHeight * 3.5) {
+        btnTop.classList.add('active')
+    } else {
+        btnTop.classList.remove('active')
+    }
+})
+
+btnTop.addEventListener('click', () => {
+    btnTop.classList.remove('active')
+})
