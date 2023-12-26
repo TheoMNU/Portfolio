@@ -1590,4 +1590,12 @@ body main .arrow-top.active span a {
   align-items: center;
   animation: 10s linear infinite arrowTopAnim;
   color: #121212;
+}
+@media screen and (max-width: 768px) {
+  body main .arrow-top.active span {
+    top: 80vh;
+    height: 30px;
+    width: 30px;
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */
